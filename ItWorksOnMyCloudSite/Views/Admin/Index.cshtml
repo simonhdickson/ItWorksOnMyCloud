@@ -1,0 +1,6 @@
+﻿@model IEnumerable<ItWorksOnMyCloudSite.Models.Post>
+
+@foreach (var post in this.Model)
+{
+    @Html.Partial("_BlogPost", post);
+}
